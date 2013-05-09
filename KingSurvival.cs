@@ -7,7 +7,7 @@ namespace KingSurvival
 {
     class KingSurvival
     {
-            private int[,] dyska;
+            private int[,] playField;
 
     private int[] pawnRows = { 0, 0, 0, 0 };
 
@@ -29,24 +29,24 @@ namespace KingSurvival
 
     public KingSurvival() 
     {
-        dyska = new int[8, 8];
+        playField = new int[8, 8];
         DaiMiDyskata();
     }
 
     public void DaiMiDyskata()
     {
 
-        for (int row = 0; row < dyska.GetLength(0); row++)
+        for (int row = 0; row < playField.GetLength(0); row++)
         {
 
-            for (int colum = 0; colum < dyska.GetLength(1); colum++)
+            for (int colum = 0; colum < playField.GetLength(1); colum++)
             {
 
                 if ((row + colum) % 2 == 0)
                 
                 {
                     
-                    dyska[row, colum] = whiteCell;
+                    playField[row, colum] = whiteCell;
                 
                 }
 
@@ -54,22 +54,22 @@ namespace KingSurvival
 
                 {
 
-                    dyska[row, colum] = blackCell;
+                    playField[row, colum] = blackCell;
 
                 }
 
             }
 
         }
-        dyska[pawnRows[0], pawnColumns[0]] = 'A';
+        playField[pawnRows[0], pawnColumns[0]] = 'A';
 
-        dyska[pawnRows[1], pawnColumns[1]] = 'B';
+        playField[pawnRows[1], pawnColumns[1]] = 'B';
 
-        dyska[pawnRows[2], pawnColumns[2]] = 'C';
+        playField[pawnRows[2], pawnColumns[2]] = 'C';
 
-        dyska[pawnRows[3], pawnColumns[3]] = 'D';
+        playField[pawnRows[3], pawnColumns[3]] = 'D';
 
-        dyska[kingRow, kingColumn] = 'K';
+        playField[kingRow, kingColumn] = 'K';
     }
     public bool MoveKingIfPossible(string command) 
     {
@@ -90,8 +90,8 @@ namespace KingSurvival
         int kingNewRow = kingRow + deltaRed[indexOfChange];
         int kingNewColum = kingColumn + deltaColona[indexOfChange];
         if (proverka2(kingNewRow, kingNewColum)) 
-        {            dyska[kingRow, kingColumn] = dyska[kingNewRow, kingNewColum];
-            dyska[kingNewRow, kingNewColum] = 'K';
+        {            playField[kingRow, kingColumn] = playField[kingNewRow, kingNewColum];
+            playField[kingNewRow, kingNewColum] = 'K';
             kingRow = kingNewRow;
 
 
@@ -156,8 +156,8 @@ namespace KingSurvival
         int pawnNewColum = pawnColumns[pawnIndex] + deltaColona[indexOfChange];
         if (proverka2(pawnNewRow, pawnNewColum))
         {
-            dyska[pawnRows[pawnIndex], pawnColumns[pawnIndex]] = dyska[pawnNewRow, pawnNewColum];
-            dyska[pawnNewRow, pawnNewColum] = command.ToUpper()[0];
+            playField[pawnRows[pawnIndex], pawnColumns[pawnIndex]] = playField[pawnNewRow, pawnNewColum];
+            playField[pawnNewRow, pawnNewColum] = command.ToUpper()[0];
             pawnRows[pawnIndex] = pawnNewRow;
             pawnColumns[pawnIndex] = pawnNewColum;
             return true;
@@ -171,9 +171,9 @@ namespace KingSurvival
         {
             return true;
         }
-        for (int i = 0; i < dyska.GetLength(0); i+=2) // check if all powns are on the last row
+        for (int i = 0; i < playField.GetLength(0); i+=2) // check if all powns are on the last row
         {
-            if (dyska[dyska.GetLength(1) - 1, i] == whiteCell || dyska[dyska.GetLength(1) - 1, i] == blackCell)
+            if (playField[playField.GetLength(1) - 1, i] == whiteCell || playField[playField.GetLength(1) - 1, i] == blackCell)
             {
                 return false;
             }
@@ -183,7 +183,7 @@ namespace KingSurvival
 
     private bool proverka(int row, int colum)
     {
-        if (row < 0 || row > dyska.GetLength(0) - 1 || colum < 0 || colum > dyska.GetLength(1) - 1)
+        if (row < 0 || row > playField.GetLength(0) - 1 || colum < 0 || colum > playField.GetLength(1) - 1)
         {
 
 
@@ -197,7 +197,7 @@ namespace KingSurvival
     {
 
         if (proverka(row, colum))        {
-            if (dyska[row, colum] == whiteCell || dyska[row, colum] == blackCell)
+            if (playField[row, colum] == whiteCell || playField[row, colum] == blackCell)
             {                return true;
             }
         }
@@ -219,11 +219,11 @@ namespace KingSurvival
     }
     public void PrintBoard()
     {
-        for (int row = 0; row < dyska.GetLength(0); row++)
+        for (int row = 0; row < playField.GetLength(0); row++)
         {
-            for (int colum = 0; colum < dyska.GetLength(1); colum++)
+            for (int colum = 0; colum < playField.GetLength(1); colum++)
             {
-                int cell = dyska[row, colum];
+                int cell = playField[row, colum];
                 char toPrint = (char)cell;
                 Console.Write(toPrint + " ");
             }

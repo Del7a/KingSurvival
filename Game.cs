@@ -8,6 +8,7 @@ namespace KingSurvival
         public const int FieldDimention = 8;
         List<Pawn> pawns = new List<Pawn>();
         King king = new King();
+        private int turnsCounter = 0;
 
         public void Initialize()
         {
@@ -30,6 +31,11 @@ namespace KingSurvival
         }
 
         public void KingTurn(string command)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PawnTurn(string command)
         {
             throw new NotImplementedException();
         }

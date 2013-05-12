@@ -30,45 +30,35 @@ namespace KingSurvival
         public KingSurvival()
         {
             playField = new int[8, 8];
-            DaiMiDyskata();
+            CreateBoard(ref playField);
         }
 
-        public void DaiMiDyskata()
+        public void CreateBoard(ref int[,] playfield)
         {
-
-            for (int row = 0; row < playField.GetLength(0); row++)
+            for (int row = 0; row < playfield.GetLength(0); row++)
             {
-
-                for (int colum = 0; colum < playField.GetLength(1); colum++)
+                for (int col = 0; col < playfield.GetLength(1); col++)
                 {
-
-                    if ((row + colum) % 2 == 0)
+                    if ((row + col) % 2 == 0)
                     {
-
-                        playField[row, colum] = whiteCell;
-
+                        playfield[row, col] = whiteCell;
                     }
 
                     else
                     {
-
-                        playField[row, colum] = blackCell;
-
+                        playfield[row, col] = blackCell;
                     }
-
                 }
-
             }
-            playField[pawnRows[0], pawnColumns[0]] = 'A';
 
-            playField[pawnRows[1], pawnColumns[1]] = 'B';
+            playfield[pawnRows[0], pawnColumns[0]] = 'A';
+            playfield[pawnRows[1], pawnColumns[1]] = 'B';
+            playfield[pawnRows[2], pawnColumns[2]] = 'C';
+            playfield[pawnRows[3], pawnColumns[3]] = 'D';
 
-            playField[pawnRows[2], pawnColumns[2]] = 'C';
-
-            playField[pawnRows[3], pawnColumns[3]] = 'D';
-
-            playField[kingRow, kingColumn] = 'K';
+            playfield[kingRow, kingColumn] = 'K';
         }
+
         public bool MoveKingIfPossible(string command)
         {
             if (command.Length != 3)

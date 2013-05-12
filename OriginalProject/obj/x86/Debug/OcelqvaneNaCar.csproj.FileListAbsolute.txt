@@ -3,3 +3,5 @@ D:\GitHub\KingSurvival\bin\Debug\KingSurvival.exe
 D:\GitHub\KingSurvival\bin\Debug\KingSurvival.pdb
 D:\GitHub\KingSurvival\obj\x86\Debug\KingSurvival.exe
 D:\GitHub\KingSurvival\obj\x86\Debug\KingSurvival.pdb
+D:\GitHub\KingSurvival\OriginalProject\obj\x86\Debug\KingSurvival.exe
+D:\GitHub\KingSurvival\OriginalProject\obj\x86\Debug\KingSurvival.pdb

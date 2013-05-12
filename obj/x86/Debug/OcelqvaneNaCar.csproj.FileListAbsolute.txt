@@ -1,0 +1,5 @@
+D:\GitHub\KingSurvival\bin\Debug\KingSurvival.exe
+D:\GitHub\KingSurvival\bin\Debug\KingSurvival.pdb
+D:\GitHub\KingSurvival\obj\x86\Debug\OcelqvaneNaCar.csprojResolveAssemblyReference.cache
+D:\GitHub\KingSurvival\obj\x86\Debug\KingSurvival.exe
+D:\GitHub\KingSurvival\obj\x86\Debug\KingSurvival.pdb

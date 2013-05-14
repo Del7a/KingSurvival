@@ -4,10 +4,24 @@ namespace KingSurvival
 {
     public class Pawn : Figure
     {
-        public char Symbol { get; set; }
-        public override bool TryMove(int rowIncrement, int colIncrement)
+        private bool[] availableMoves;
+        
+        public Pawn(Position position, char symbol)
+            : base(position, symbol)
+        { 
+        
+        }
+
+        public bool[] AvailableMoves
         {
-            throw new NotImplementedException();
+            get
+            {
+                return this.availableMoves;
+            }
+            set
+            {
+                this.availableMoves = value;
+            }
         }
     }
 }

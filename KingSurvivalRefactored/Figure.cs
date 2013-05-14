@@ -4,7 +4,26 @@ namespace KingSurvival
 {
     public abstract class Figure
     {
-        Position position;
+        private Position position;
+        public char symbol;
+
+        public Figure(Position position, char symbol)
+        {
+            this.Position = position;
+            this.Symbol = symbol;
+        }
+
+        public char Symbol
+        {
+            get
+            {
+                return this.symbol;
+            }
+            protected set
+            {
+                this.symbol = value;
+            }
+        }
 
         public Position Position
         {
@@ -17,7 +36,5 @@ namespace KingSurvival
                 throw new NotImplementedException();
             }
         }
-
-        public abstract bool TryMove(int rowIncrement, int colIncrement);
     }
 }

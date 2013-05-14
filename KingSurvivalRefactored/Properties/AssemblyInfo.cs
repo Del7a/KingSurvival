@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KingSurvivalRefactored")]
+[assembly: AssemblyTitle("KingSurvival")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KingSurvivalRefactored")]
+[assembly: AssemblyProduct("KingSurvival")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("da78eca6-654c-415b-9a0f-9d3ed05ba930")]
+[assembly: Guid("3bcbe214-8b2b-43d4-a8ea-59c3466144ea")]
 
 // Version information for an assembly consists of the following four values:
 //

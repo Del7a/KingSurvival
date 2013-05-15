@@ -4,9 +4,8 @@ namespace KingSurvival
 {
     public abstract class Figure
     {
-        private char symbol;
-
-        private readonly Position position;
+        private Position position;
+        private bool[] availableMoves;
 
         public Figure(Position position, char symbol)
         {
@@ -14,15 +13,17 @@ namespace KingSurvival
             this.Symbol = symbol;
         }
 
-        public char Symbol
+        public char Symbol { get; protected set; }
+
+        public bool[] AvailableMoves
         {
             get
             {
-                return this.symbol;
+                return this.availableMoves;
             }
-            protected set
+            set
             {
-                this.symbol = value;
+                this.availableMoves = value;
             }
         }
 
@@ -34,7 +35,7 @@ namespace KingSurvival
             }
             set
             {
-                throw new NotImplementedException();
+                this.position = value;
             }
         }
     }

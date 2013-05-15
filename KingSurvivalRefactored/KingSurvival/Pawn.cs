@@ -8,7 +8,5 @@ namespace KingSurvival
         {
             this.AvailableMoves = new bool[] { true, true };
         }
-
-        public bool[] AvailableMoves { get; set; }
     }
 }

@@ -1,2 +1,0 @@
-C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\bin\Debug\KingSurvival.exe.config
-C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\obj\Debug\KingSurvival.csprojResolveAssemblyReference.cache

@@ -4,10 +4,11 @@ namespace KingSurvival
 {
     public class King : Figure
     {
-        private readonly char kingSymbol = 'K';
+        private static readonly char kingSymbol = 'K';
 
-        public King(Position position) : base(position, this.kingSymbol)
-        { 
+        public King(Position position) : base(position, kingSymbol)
+        {
+            this.AvailableMoves = new bool[] { true, true, true, true };
         }
 
         public bool[] AvailableMoves { get; set; }

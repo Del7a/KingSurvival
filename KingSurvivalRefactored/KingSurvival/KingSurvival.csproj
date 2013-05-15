@@ -56,10 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameBoard.cs" />
-    <Compile Include="Direction.cs" />
-    <Compile Include="Engine.cs" />
     <Compile Include="Field.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="ConsoleEngine.cs" />
     <Compile Include="Figure.cs" />
     <Compile Include="King.cs" />
     <Compile Include="Pawn.cs" />

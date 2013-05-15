@@ -10,6 +10,5 @@ namespace KingSurvival
         {
             this.AvailableMoves = new bool[] { true, true, true, true };
         }
-
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\bin\Debug\KingSurvival.exe.config
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\obj\Debug\KingSurvival.csprojResolveAssemblyReference.cache
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\bin\Debug\KingSurvival.exe
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\bin\Debug\KingSurvival.pdb
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\obj\Debug\KingSurvival.exe
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvival\obj\Debug\KingSurvival.pdb

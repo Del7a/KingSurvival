@@ -1,0 +1,5 @@
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvivalTest\bin\Debug\KingSurvivalTest.dll
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvivalTest\bin\Debug\KingSurvivalTest.pdb
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvivalTest\obj\Debug\KingSurvivalTest.csprojResolveAssemblyReference.cache
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvivalTest\obj\Debug\KingSurvivalTest.dll
+C:\Users\Philip\Documents\Visual Studio 2012\Projects\LantaniumTeam\KingSurvivalTest\obj\Debug\KingSurvivalTest.pdb

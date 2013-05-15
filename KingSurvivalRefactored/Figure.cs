@@ -4,8 +4,9 @@ namespace KingSurvival
 {
     public abstract class Figure
     {
-        private Position position;
-        public char symbol;
+        private char symbol;
+
+        private readonly Position position;
 
         public Figure(Position position, char symbol)
         {

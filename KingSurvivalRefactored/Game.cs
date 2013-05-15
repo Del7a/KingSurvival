@@ -6,9 +6,9 @@ namespace KingSurvival
     public class Game
     {
         public const int FieldDimention = 8;
-        List<Pawn> pawns = new List<Pawn>();
-        King king = new King();
-        private int turnsCounter = 0;
+        readonly List<Pawn> pawns = new List<Pawn>();
+        readonly King king = new King(new Position(0, 0));
+        private readonly int turnsCounter = 0;
 
         public void Initialize()
         {
